@@ -8,6 +8,7 @@ export default class About extends Component {
     }
 
     render(){
+        DocHead.setTitle('About | My Resolutions');
         return (
             <ReactCSSTransitionGroup
                 component="div"

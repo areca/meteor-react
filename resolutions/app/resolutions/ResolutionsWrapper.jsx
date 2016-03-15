@@ -29,12 +29,14 @@ export default class ResolutionsWrapper extends TrackerReact(React.Component){
     }
 
     render(){
-        let res = this.resolutions();
+        DocHead.setTitle('My Resolutions For This Month');
+
         return (
             <ReactCSSTransitionGroup
                 component="div"
                 transitionName="route"
                 transitionEnterTimeout={600}
+                transitionAppearTimeout={600}
                 transitionLeaveTimeout={400}
                 transitionAppear={true}>
                 <h1> My Resolutions </h1>
